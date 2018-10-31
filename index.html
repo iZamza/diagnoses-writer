@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Диагноз-writer:)</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+		<div class="item primal">
+			<div class="title">
+				Основной диагноз
+			</div>
+			<textarea class="input-area" id="primal" rows="7"></textarea>
+		</div>
+		<div class="item concomitant">
+			<div class="title">
+				<label class="container"> Сопутствующий диагноз
+  					<input type="checkbox" id="concomitant-check">
+ 				    <span class="checkmark"></span>
+				</label> 
+			</div>
+			<textarea class="input-area" id="concomitant" rows="7"></textarea>
+		</div>
+		<div class="item information">
+			<div class="title">
+				<label class="container"> Рекомендации выписки
+  					<input type="checkbox" id="information-check">
+ 				    <span class="checkmark"></span>
+				</label> 
+			</div>
+			<textarea class="input-area" id="information" rows="7"></textarea>
+		</div>
+		<div class="item print">
+			<div id="printBtn">Распечатать</div>
+		</div>
+</div>
+<div class="outputText">
+	<div class="forTitle">
+		<p class="primalText"></p>
+	</div>
+	<div class="Clinical">
+		<div class="clinicalBlock">
+			13. Клинический диагноз: 
+			<p class="primalText"></p>
+			<p class="concomitantText"></p>
+		</div>
+	</div>
+	<div class="End">
+		<div class="clinicalBlock">
+			14. Заключительный клинический диагноз: <br>
+			Основной: <p class="primalText"></p>
+			<div class="concomitantBlock">
+			Сопутствующий: <p class="concomitantText"></p>
+			</div>
+		</div>
+	</div>
+	<div class="statistic">
+		<div class="clinicalBlock">
+			Основной: <p class="primalText"></p>
+			<div class="concomitantBlock">
+			Сопутствующий: <p class="concomitantText"></p>
+			</div>
+		</div>
+	</div>
+	<pre id="informationText">
+		
+	</pre>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
